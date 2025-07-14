@@ -5,6 +5,7 @@ require('dotenv').config(); // Load environment variables from .env file
 
 const express = require('express'); // Import the Express.js framework
 const mongoose = require('mongoose'); // Import Mongoose for MongoDB interaction
+const cors = require('cors'); // Import the CORS middleware
 
 // Create an Express application instance
 const app = express();
@@ -14,6 +15,10 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware to parse incoming JSON requests.
 app.use(express.json());
+
+// Enable CORS for all origins.
+// In a production environment, you would restrict this to specific origins (e.g., your frontend domain).
+app.use(cors());
 
 // Import task routes
 const taskRoutes = require('./routes/taskRoutes');

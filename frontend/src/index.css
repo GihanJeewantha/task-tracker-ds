@@ -1,0 +1,11 @@
+/* src/index.css */
+/* These are the core Tailwind CSS directives. */
+/* They inject Tailwind's base styles, components, and utility classes. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply the Inter font globally */
+body {
+  font-family: 'Inter', sans-serif;
+}
