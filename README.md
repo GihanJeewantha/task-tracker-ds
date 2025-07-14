@@ -96,7 +96,7 @@ yarn-error.log*
 
 ```env
 # MongoDB connection string
-MONGO_URI=mongodb+srv://taskuser:<YOUR_PASSWORD>@your-cluster.mongodb.net/?retryWrites=true&w=majority
+MONGO_URI=
 
 # Server port
 PORT=5000
